@@ -25,14 +25,14 @@
   },
   {
     "id": 5,
-    "name": "Rice",
+    "name": "Cabbage",
     "serial": "Product 5",
-    "pic": "https://i.ibb.co/b7Y2g2C/rice.jpg"
+    "pic": "https://i.ibb.co/gDNh97Z/badhacopi.png"
   },
 
   {
     "id": 6,
-    "name": "Vegitable",
+    "name": "Vegetable",
     "serial": "Product 6",
     "pic": "https://i.ibb.co/2MXqhmv/veg.png"
   },
@@ -45,8 +45,14 @@
   },
   {
     "id": 8,
-    "name": "Dal",
+    "name": "Coconut",
     "serial": "Product 8",
-    "pic": "https://i.ibb.co/fNzhf74/dal.jpg"
+    "pic": "https://i.ibb.co/F8yYW6w/coco.png"
+  },
+  {
+    "id": 8,
+    "name": "Gourd",
+    "serial": "Product 9",
+    "pic": "https://i.ibb.co/px3QG8q/gourd.png"
   }
 ]

@@ -9,7 +9,7 @@ import img4 from "../../assets/banner/banner4.jpg";
 
 const Banner = () => {
   return (
-    <Carousel className="min-h-screen">
+    <Carousel className="">
       <div>
         <img src={img1} />
       </div>

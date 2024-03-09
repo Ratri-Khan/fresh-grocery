@@ -1,11 +1,18 @@
 // import React from 'react';
-import onion from '../../assets/categories/onion.jpg';
-import fish from '../../assets/categories/fish.jpg';
-import dal from '../../assets/categories/dal.jpg';
+import ReactStars from "react-rating-stars-component";
+import onion from "../../assets/categories/onion.jpg";
+import fish from "../../assets/categories/fish.jpg";
+import rice from "../../assets/categories/rice.jpg";
+
+import "./Featured.css";
 
 import { useEffect, useState } from "react";
 
 const Categories = () => {
+  const ratingChanged = (newRating) => {
+    console.log(newRating);
+  };
+
   const [categories, setCategories] = useState([]);
   useEffect(() => {
     fetch("categories.json")
@@ -14,12 +21,13 @@ const Categories = () => {
   }, []);
   return (
     <div className="w-11/12 mx-auto">
-      <div className="grid grid-cols-8 gap-4">
+      <h3 className="text-xl py-8">Shop by Categories</h3>
+      <div className="grid grid-cols-4 sm:grid-cols-5 lg:grid-cols-9 gap-4">
         {categories.map((category) => (
           <div key={category.id} className="border-2 text-center">
-            <img src={category.pic} alt="" className="h-36 w-full" />
+            <img src={category.pic} alt="" className="h-28 w-full" />
             <div className="h-20">
-              <p className="text-xl  font-semibold uppercase py-3">
+              <p className=" uppercase py-1">
                 {category.name}
               </p>
               <p className="text-xs">{category.serial}</p>
@@ -27,10 +35,51 @@ const Categories = () => {
           </div>
         ))}
       </div>
-      <div className='grid grid-cols-3 gap-4 '>
-          <img src={onion} alt="" className='w-full h-64' />
-          <img src={fish} alt="" className='w-full h-64' />
-          <img src={dal} alt=""className='w-full h-64' />
+
+
+      <div className="grid lg:grid-cols-3 sm:grid-cols-3 gap-4 my-4">
+        <div className="relative">
+          <div className="linear-gradient"></div>
+          <img src={onion} alt="" className="w-full h-64" />
+          <div className="absolute top-4 left-4 right-0 bottom-0 text-white text-xl uppercase font-bold">
+            <p>Fresh Fish</p>
+            <p className="text-sm">6 categories</p>
+            <ReactStars
+              count={5}
+              onChange={ratingChanged}
+              size={24}
+              activeColor="#ffd700"
+            />
+          </div>
+        </div>
+        <div className="relative">
+          <div className="linear-gradient"></div>
+          <img src={fish} alt="" className="w-full h-64" />
+          <div className="absolute top-4 left-4 right-0 bottom-0 text-white text-xl uppercase font-bold">
+            <p>Fresh Fish</p>
+            <p className="text-sm">6 categories</p>
+            <ReactStars
+              count={5}
+              onChange={ratingChanged}
+              size={24}
+              activeColor="#ffd700"
+            />
+          </div>
+        </div>
+        <div className="relative">
+          <div className="linear-gradient"></div>
+          <img src={rice} alt="" className="w-full h-64" />
+          <div className="absolute top-4 left-4 right-0 bottom-0 text-white text-xl uppercase font-bold">
+            <p>Fresh Fish</p>
+            <p className="text-sm">6 categories</p>
+            <ReactStars
+              count={5}
+              onChange={ratingChanged}
+              size={24}
+              activeColor="#ffd700"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,3 +1,12 @@
 .featured-item{
     background-image: url('../../assets/banner/banner2.jpg');
 }
+.linear-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(74 4 78), rgba(0,0,0,0));
+    width:80%;
+  }
