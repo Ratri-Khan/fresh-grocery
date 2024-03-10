@@ -3,12 +3,12 @@ import "./Featured.css";
 
 const Featured = () => {
   return (
-    <div className="featured-item bg-fixed text-white pt-8 mt-20">
+    <div className="featured-item bg-fixed text-white pt-8">
       <div className="text-center">
         <p className="text-5xl">Check It Out</p>
         <p className="text-2xl py-4">Featured Item</p>
       </div>
-      <div className="md:flex justify-center items-center bg-red-950 bg-opacity-60 pb-20 pt-12 lg:px-36 px-5">
+      <div className="md:flex justify-center items-center bg-slate-500 bg-opacity-60 pb-20 pt-12 lg:px-36 px-5">
         <div>
           <img src={featuredImg} alt="" />
         </div>

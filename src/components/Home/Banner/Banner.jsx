@@ -4,7 +4,7 @@ import img2 from "../../../assets/banner/banner2.jpg";
 import img3 from "../../../assets/banner/banner3.jpg";
 import img4 from "../../../assets/banner/banner4.jpg";
 
-import discount from "../../../assets/home/discount.mp4";
+import discount from "../../../assets/home/video.mp4";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -44,7 +44,7 @@ const Banner = () => {
       <div className="w-3/12 h-[600px]">
         <video
           width="100%"
-          style={{ height: "600px", backgroundColor: "rgb(170,7,7)" }}
+          style={{ height: "600px", backgroundColor: "black" }}
           autoPlay
           muted
           loop

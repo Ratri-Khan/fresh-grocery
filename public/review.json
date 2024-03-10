@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "review": "Great product! It exceeded my expectations."
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "review": "I'm very satisfied with this purchase. Highly recommended!"
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "review": "The quality of the product is top-notch. Will definitely buy again."
+    },
+    {
+      "id": 4,
+      "name": "Michael Brown",
+      "review": "Fast shipping and excellent customer service. Thank you!"
+    },
+    {
+      "id": 5,
+      "name": "Emily Wilson",
+      "review": "This product changed my life. I can't imagine living without it now."
+    },
+    {
+      "id": 6,
+      "name": "David Martinez",
+      "review": "The best purchase I've made in a long time. 10/10!"
+    }
+  ]
+  

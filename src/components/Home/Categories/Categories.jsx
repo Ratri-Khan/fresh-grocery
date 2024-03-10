@@ -20,7 +20,7 @@ const Categories = () => {
       <h3 className="text-xl py-8">Shop by Categories</h3>
       <div className="grid grid-cols-4 sm:grid-cols-5 lg:grid-cols-9 gap-4">
         {categories.map((category) => (
-          <div key={category.id} className="border border-red-900 text-center">
+          <div key={category.id} className="border border-slate-900 text-center">
             <img src={category.pic} alt="" className="h-28 w-full" />
             <div className="h-20">
               <p className=" uppercase py-1">
