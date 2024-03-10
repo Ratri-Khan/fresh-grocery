@@ -1,4 +1,4 @@
-import featuredImg from "../../assets/banner/banner2.jpg";
+import featuredImg from "../../../assets/banner/banner2.jpg";
 import "./Featured.css";
 
 const Featured = () => {
@@ -8,7 +8,7 @@ const Featured = () => {
         <p className="text-5xl">Check It Out</p>
         <p className="text-2xl py-4">Featured Item</p>
       </div>
-      <div className="md:flex justify-center items-center bg-slate-500 bg-opacity-60 pb-20 pt-12 lg:px-36 px-5">
+      <div className="md:flex justify-center items-center bg-red-950 bg-opacity-60 pb-20 pt-12 lg:px-36 px-5">
         <div>
           <img src={featuredImg} alt="" />
         </div>
@@ -23,7 +23,7 @@ const Featured = () => {
             reprehenderit numquam magnam nemo vitae cupiditate, atque maiores
             dicta minus pariatur. Perspiciatis nobis vero quas?
           </p>
-          <button className="btn btn-outline py-2 px-4 border mt-4">
+          <button className="rounded py-2 px-4 border mt-4">
             Order Now
           </button>
         </div>

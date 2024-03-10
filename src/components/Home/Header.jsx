@@ -36,30 +36,14 @@ const Header = () => {
     };
   }, []);
   return (
-    <div className="mb-2">
-      <div className="w-11/12 m-auto  flex items-center justify-between  p-4">
-        <p className="text-sm">Welcome to our online store...</p>
-        <ul className="flex">
-          <li className="mr-6">
-            <FaFacebook />
-          </li>
-          <li className="mr-6">
-            <FaSquareXTwitter />
-          </li>
-          <li className="mr-6">
-            <FaInstagramSquare />
-          </li>
-          <li className="">
-            <FaYoutube />
-          </li>
-        </ul>
-      </div>
+    <div>
+      
 
       <div
         className={`${
           isScrolled
-            ? "fixed bg-red-900 top-0  w-full text-slate-300"
-            : " text-white bg-red-950"
+            ? "fixed bg-red-900/70 top-0  w-full text-slate-300"
+            : " text-white bg-red-900 "
         }  navbar z-10`}
       >
         <div className="navbar-start">
@@ -109,6 +93,23 @@ const Header = () => {
           <MdAccountCircle className="mx-6" />
           <CiDiscount1 />
         </div>
+      </div>
+      <div className="w-11/12 m-auto  flex items-center justify-between  p-4">
+        <p className="text-sm">Welcome to our online store...</p>
+        <ul className="flex">
+          <li className="mr-6">
+            <FaFacebook />
+          </li>
+          <li className="mr-6">
+            <FaSquareXTwitter />
+          </li>
+          <li className="mr-6">
+            <FaInstagramSquare />
+          </li>
+          <li className="">
+            <FaYoutube />
+          </li>
+        </ul>
       </div>
     </div>
   );

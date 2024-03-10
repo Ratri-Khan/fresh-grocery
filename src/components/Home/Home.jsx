@@ -1,16 +1,16 @@
 // import React from 'react';
 
 import Footer from "../shared/Footer";
-import Banner from "./Banner";
-import Categories from "./Categories";
+import Banner from "./Banner/Banner";
+import Categories from "./Categories/Categories";
 import Discount from "./Discount";
-import Featured from "./Featured";
+import Featured from "./Featured/Featured";
 import Header from "./Header";
 import Testimonial from "./Testimonial";
 
 const Home = () => {
     return (
-        <div className="bg-red-50">
+        <div className="bg-slate-100">
             <Header></Header>
             <Banner></Banner>
             <Categories></Categories>
