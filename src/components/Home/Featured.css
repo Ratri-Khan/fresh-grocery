@@ -1,5 +1,10 @@
 .featured-item{
-    background-image: url('../../assets/banner/banner2.jpg');
+    background-image: url('../../assets/banner/banner4.jpg');
+}
+.discountCover{
+    background-image: url('../../assets//home//offer.png');
+    background-size: cover;
+    background-repeat:no-repeat;
 }
 .linear-gradient {
     position: absolute;
@@ -7,6 +12,28 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(90deg, rgba(74 4 78), rgba(0,0,0,0));
+    background: linear-gradient(90deg, rgb(2, 1, 1), rgba(0,0,0,0));
     width:80%;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
