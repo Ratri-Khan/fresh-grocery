@@ -1,22 +1,16 @@
-.swiper {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-  
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.banner{
+  background-image: url('../../../assets/banner/banner1.jpg');
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: change 20s infinite ease;
+}
+@keyframes change{
+0%{background-image: url('../../../assets/banner/banner2.jpg');}
+20%{background-image: url('../../../assets/banner/banner4.jpg');}
+40%{background-image: url('../../../assets/banner/banner1.jpg');}
+60%{background-image: url('../../../assets/banner/banner4.jpg');}
+60%{background-image: url('../../../assets/banner/banner2.jpg');}
+60%{background-image: url('../../../assets/banner/banner4.jpg');}
+}

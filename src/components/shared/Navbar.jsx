@@ -1,50 +1,15 @@
 // import React from "react";
-import {
-    FaFacebook,
-    FaYoutube,
-    FaInstagramSquare,
-    FaCartArrowDown,
-  } from "react-icons/fa";
+import {FaCartArrowDown,} from "react-icons/fa";
   import { MdAccountCircle } from "react-icons/md";
-  import { FaSquareXTwitter } from "react-icons/fa6";
   import { CiDiscount1 } from "react-icons/ci";
-  import { useEffect, useState } from "react";
   
   const Navbar = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
-    // Stricky Navbar
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-  
-    useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
-  
-    useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-  
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
     return (
       <div>
-        
   
         <div
-          className={`${
-            isScrolled
-              ? "fixed bg-slate-900/80 top-0  w-full text-slate-300"
-              : " text-white bg-black opacity-80 w-11/12 m-auto"
-          }  navbar z-10`}
+          className={"navbar z-50 fixed bg-[#1a1a1a] top-0  w-full text-slate-300"
+          }  
         >
           <div className="navbar-start">
             <div className="dropdown">
@@ -94,23 +59,7 @@ import {
             <CiDiscount1 />
           </div>
         </div>
-        <div className="w-11/12 m-auto  flex items-center justify-between  p-4">
-          <p className="text-sm">Welcome to our online store...</p>
-          <ul className="flex">
-            <li className="mr-6">
-              <FaFacebook />
-            </li>
-            <li className="mr-6">
-              <FaSquareXTwitter />
-            </li>
-            <li className="mr-6">
-              <FaInstagramSquare />
-            </li>
-            <li className="">
-              <FaYoutube />
-            </li>
-          </ul>
-        </div>
+        
       </div>
     );
   };
