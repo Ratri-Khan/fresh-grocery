@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "category": "vegetable",
+    "name": "Tomato",
+    "price": "1$ per kg",
+    "rating": 4,
+    "condition": "Fresh",
+    "pic": "https://images.unsplash.com/photo-1589190051962-0b138f75d3c9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 2,
+    "category": "vegetable",
+    "name": "Potato",
+    "price": "1$ per kg",
+    "rating": 5,
+    "condition": "Fresh",
+    "pic": "https://images.unsplash.com/photo-1508313880080-c4bef0730395?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 3,
+    "category": "vegetable",
+    "name": "Cauliflower",
+    "price": "1$ per piece",
+    "rating": 4,
+    "condition": "Fresh",
+    "pic": "https://images.unsplash.com/photo-1568584711075-3d021a7c3ca3?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 4,
+    "category": "vegetable",
+    "name": "Cabbage per piece",
+    "price": "1$",
+    "rating": 5,
+    "condition": "Fresh",
+    "pic": "https://i.ibb.co/gDNh97Z/badhacopi.png"
+  },
+
+  {
+    "id": 5,
+    "category": "vegetable",
+    "name": "Pumpkin",
+    "price": "1$ per piece",
+    "rating": 4,
+    "condition": "Fresh",
+    "pic": "https://i.ibb.co/k4gnKjr/kumra.png"
+  },
+
+  {
+    "id": 6,
+    "category": "vegetable",
+    "name": "Gourd",
+    "price": "1$ per piece",
+    "rating": 3,
+    "condition": "Fresh",
+    "pic": "https://i.ibb.co/px3QG8q/gourd.png"
+  },
+  {
+    "id": 7,
+    "category": "fish",
+    "name": "Gibelion Catla",
+    "price": "3$ per kg",
+    "rating": 4,
+    "condition": "Fresh",
+    "pic": "https://ars.els-cdn.com/content/image/3-s2.0-B9780128155561000042-f04-38-9780128155561.jpg"
+  },
+  {
+    "id": 8,
+    "category": "fish",
+    "name": "Tuna",
+    "price": "5$ per kg",
+    "rating": 4,
+    "condition": "Fresh",
+    "pic": "https://1.bp.blogspot.com/-mWHooEupf_M/X8uC9LKGFQI/AAAAAAAABqs/PfoQHIh7TME93JRKgN2bEDhEBmLikTAbwCNcBGAsYHQ/w400-h270/Bengali%2Bfish.jpg"
+  },
+  {
+    "id": 9,
+    "category": "fish",
+    "name": "Putty",
+    "price": "2$ per kg",
+    "rating": 4,
+    "condition": "Fresh",
+    "pic": "https://i.ytimg.com/vi/jjazcYPxDaA/hqdefault.jpg"
+  },
+  {
+    "id": 10,
+    "category": "fish",
+    "name": "Hilsa",
+    "price": "10$ per kg",
+    "rating": 5,
+    "condition": "Fresh",
+    "pic": "https://upload.wikimedia.org/wikipedia/commons/d/d3/BHilsa123.jpg"
+  },
+  {
+    "id": 11,
+    "category": "fish",
+    "name": "Rohu",
+    "price": "3$ per kg",
+    "rating": 4,
+    "condition": "Fresh",
+    "pic": "https://www.giggsmeat.com/wp-content/uploads/2021/08/Rui-Macher-Jhol-Bengali-Style-Rohu-Fish-Recipe.jpg"
+  },
+  {
+    "id": 12,
+    "category": "fish",
+    "name": "Labeo Catla",
+    "price": "4$ per kg",
+    "rating": 3,
+    "condition": "Fresh",
+    "pic": "https://fishbase.mnhn.fr/images/thumbnails/jpg/tn_Cacat_u8.jpg"
+  },
+  {
+    "id": 13,
+    "category": "dal",
+    "name": "Moong Dal",
+    "price": "3$ per kg",
+    "rating": 4,
+    "condition": "Fresh",
+    "pic": "https://www.24mantra.com/wp-content/uploads/2020/06/moong-dal-1581505703-5295-5ef1d67676747.jpeg"
+  },
+  {
+    "id": 14,
+    "category": "dal",
+    "name": "Green Mong Dal",
+    "price": "2$ per kg",
+    "pic": "https://i.timesnowhindi.com/stories/mong_daal.jpg?tr=w-600,h-450,fo-auto"
+  },
+  {
+    "id": 15,
+    "category": "dal",
+    "name": "Masoor Dal",
+    "price": "3$ per kg",
+    "rating": 5,
+    "condition": "Fresh",
+    "pic": "https://www.curiouscuisiniere.com/wp-content/uploads/2020/12/Masoor-Dal-Red-Lentils-Dry-14.680.jpg"
+  },
+  {
+    "id": 16,
+    "category": "dal",
+    "name": "Red Massor",
+    "price": "6$ per kg",
+    "rating": 4,
+    "condition": "Fresh",
+    "pic": "https://st4prdbebeautiful4s4ci.blob.core.windows.net/www-bebeautiful-in/Masoor%20Dal%20face%20packs%20for%20healthy%20skin_MobileHomeFeature.jpg"
+  },
+  {
+    "id": 17,
+    "category": "dal",
+    "name": "Black Mong",
+    "price": "4$ per kg",
+    "rating": 5,
+    "condition": "Fresh",
+    "pic": "https://myfavouritepastime.files.wordpress.com/2018/03/black-gram-urad-dal-whole-with-skin-myfavouritepastime-com_3135.jpg?w=550&h=353"
+  },
+  {
+    "id": 18,
+    "category": "dal",
+    "name": "Dabli Dal",
+    "price": "5$ per kg",
+    "rating": 3,
+    "condition": "Fresh",
+    "pic": "https://myfavouritepastime.files.wordpress.com/2017/09/img_0229.jpg"
+  },
+  {
+    "id": 19,
+    "category": "fruits",
+    "name": "Apple",
+    "price": "5$ per kg",
+    "rating": 4,
+    "condition": "Fresh",
+    "pic": "https://www.yates.com.au/media/plants/fruits-and-citrus/apple/how-to-grow-apple_1551155007929.jpeg?mode=crop&anchor=center&widthratio=1.5&height=432&format=webp"
+  },
+  {
+    "id": 20,
+    "category": "fruits",
+    "name": "winter Berry",
+    "price": "5$ per kg",
+    "rating": 5,
+    "condition": "Fresh",
+    "pic": "https://ipm.missouri.edu/meg/2023/10/redBerries-DT/berry.winterberry2.shutter.jpg"
+  },
+  {
+    "id": 21,
+    "category": "fruits",
+    "name": "Berry",
+    "price": "11$ per kg",
+    "rating": 4,
+    "condition": "Fresh",
+    "pic": "https://www.shutterstock.com/image-photo/blueberries-raspberries-black-berries-shot-600nw-256957624.jpg"
+  },
+  {
+    "id": 22,
+    "category": "fruits",
+    "name": "Stawbery",
+    "price": "8$ per kg",
+    "rating": 5,
+    "condition": "Fresh",
+    "pic": "https://www.lovefreshberries.co.uk/uploads/facts/CmA5xU9Vb1cHvvg1hAsmo8pf4IgXvycb7GY33v5w.jpeg"
+  },
+  {
+    "id": 23,
+    "category": "fruits",
+    "name": "American cranberry",
+    "price": "30$ per kg",
+    "rating": 4,
+    "condition": "Fresh",
+    "pic": "https://ipm.missouri.edu/meg/2023/10/redBerries-DT/berry.amer.cranberry3.shutter.jpg"
+  },
+  {
+    "id": 24,
+    "category": "fruits",
+    "name": "Mango",
+    "price": "20$ per kg",
+    "rating": 3,
+    "condition": "Fresh",
+    "pic": "https://media.istockphoto.com/id/168278888/photo/fresh-slices-of-mango-on-a-bed-of-leaves.webp?b=1&s=170667a&w=0&k=20&c=WbK2eJCdhe2VBe75zoNcrZc8jtgg8ue-ey8p8EhOY8I="
+  }
+]

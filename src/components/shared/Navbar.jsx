@@ -2,6 +2,7 @@
 import {FaCartArrowDown,} from "react-icons/fa";
   import { MdAccountCircle } from "react-icons/md";
   import { CiDiscount1 } from "react-icons/ci";
+import { Link } from "react-router-dom";
   
   const Navbar = () => {
     return (
@@ -41,15 +42,18 @@ import {FaCartArrowDown,} from "react-icons/fa";
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost text-xl">daisyUI</a>
+            <a className="btn btn-ghost text-xl">Fresh Grocery</a>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
               <li>
-                <a>Item 1</a>
+                <Link to='/home'>Home</Link>
               </li>
               <li>
-                <a>Item 3</a>
+                <Link to='/category'>Category</Link>
+              </li>
+              <li>
+                <a>Order</a>
               </li>
             </ul>
           </div>
