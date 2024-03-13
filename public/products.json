@@ -29,8 +29,8 @@
   {
     "id": 4,
     "category": "vegetable",
-    "name": "Cabbage per piece",
-    "price": "1$",
+    "name": "Cabbage",
+    "price": "1$  per piece",
     "rating": 5,
     "condition": "Fresh",
     "pic": "https://i.ibb.co/gDNh97Z/badhacopi.png"
@@ -41,7 +41,7 @@
     "category": "vegetable",
     "name": "Pumpkin",
     "price": "1$ per piece",
-    "rating": 4,
+    "rating": 4.5,
     "condition": "Fresh",
     "pic": "https://i.ibb.co/k4gnKjr/kumra.png"
   },
