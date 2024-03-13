@@ -21,7 +21,7 @@ const Category = () => {
   const vegetables = category.filter((item) => item.category === "vegetable");
   const fishes = category.filter((item) => item.category === "fish");
   const dal = category.filter((item) => item.category === "dal");
-  const fruits = category.filter((item) => item.category === "vegetable");
+  const fruits = category.filter((item) => item.category === "fruits");
   return (
     <div>
       <div className=" py-20">
@@ -78,13 +78,13 @@ const Category = () => {
         <CategoryCover data={vegetables} img={vegCover} title="vegetable"></CategoryCover>
       </div>
       <div>
-        <CategoryCover data={fishes} img={fishCover} title="fish"></CategoryCover>
+        <CategoryCover data={fishes} img={fishCover} title={"fish"}></CategoryCover>
       </div>
       <div>
-        <CategoryCover data={dal} img={dalCover} title="Dal"></CategoryCover>
+        <CategoryCover data={dal} img={dalCover} title={"dal"}></CategoryCover>
       </div>
       <div>
-        <CategoryCover data={fruits} img={fruitsCover} title="fruits"></CategoryCover>
+        <CategoryCover data={fruits} img={fruitsCover} title={"fruits"}></CategoryCover>
       </div>
     </div>
   );
