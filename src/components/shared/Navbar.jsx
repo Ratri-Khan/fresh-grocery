@@ -1,15 +1,12 @@
 // import React from "react";
 import { FaCartArrowDown } from "react-icons/fa";
 import { MdAccountCircle } from "react-icons/md";
-import { CiDiscount1 } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div>
-      <div
-        className="navbar z-50 fixed bg-[#1a1a1a] top-0  w-full text-slate-300"
-      >
+      <div className="navbar z-50 fixed bg-[#1a1a1a] top-0  w-full text-slate-300">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -55,10 +52,14 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end text-3xl">
+        <div className="navbar-end">
           <FaCartArrowDown />
-          <MdAccountCircle className="mx-6" />
-          <CiDiscount1 />
+          <Link to="/signUp">
+            <div className="mx-6 flex flex-col  justify-center items-center">
+              <MdAccountCircle className="text-3xl" />
+              <p className="text-xs"> Account</p>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

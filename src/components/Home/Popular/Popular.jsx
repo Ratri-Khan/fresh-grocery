@@ -16,7 +16,7 @@ const Popular = () => {
       <h1 className="text-2xl font-bold my-12">Most Popular</h1>
       <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {popular.map((info) => (
-          <div key={info.id}>
+          <div key={info._id}>
             <div className="card bg-base-100 shadow-xl border-2 shadow-blue-500/60">
             <figure className="p-3 bg-slate-900">
               <img src={info.pic} alt="image" className="px-0 rounded-xl h-[200px]" />
