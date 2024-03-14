@@ -1,6 +1,7 @@
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 import { Link } from "react-router-dom";
+import '../Home/Testimonial/Testimonial.css'
 
 const CategoryCover = ({ data, img, title }) => {
   return (
@@ -14,7 +15,7 @@ const CategoryCover = ({ data, img, title }) => {
       <div className="hero-content text-center text-neutral-content">
         <div className="w-full">
           <h1 className="mb-5 text-4xl font-bold uppercase">{title}</h1>
-          <div className="grid grid-cols-3 gap-4 mb-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
             {data.map((item) => (
               <div key={item.id} className="bg-black/70 text-center p-4">
                 <p className="text-2xl">{item.name}</p>
@@ -29,7 +30,7 @@ const CategoryCover = ({ data, img, title }) => {
             ))}
           </div>
           <Link to={`/order/${title}`}>
-            <button className="btn btn-primary">Order Now</button>
+            <button className="gorgeous-button">Order Now</button>
           </Link>
         </div>
       </div>

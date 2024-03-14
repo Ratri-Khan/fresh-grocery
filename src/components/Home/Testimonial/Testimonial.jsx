@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import pngImg from "../../../assets/home/offer.png";
 // import Discount from "../Discount/Discount";
 import './Testimonial.css'
+import Popular from "../Popular/Popular";
 
 const Testimonial = () => {
   const [reviews, setReviews] = useState([]);
@@ -13,7 +14,7 @@ const Testimonial = () => {
       .then((data) => setReviews(data));
   }, []);
   return (
-    <div className="testimonial relative bg-green-100">
+    <div className="testimonial relative bg-green-100 mb-20">
       <img src={pngImg} alt="" className="right-0 top-0 absolute" />
       <p className="text-2xl text-center font-bold pt-16 pb-8 w-10/12 mx-auto">
         Share Your Review
@@ -32,15 +33,15 @@ const Testimonial = () => {
       </div>
       <div className="flex justify-center">
       <div className="flex py-10">
-        <input type="text" name="" id="" placeholder="Type Your Comment" className="p-2 border border-slate-950 lg:w-96"/>
+        <input type="text" name="" id="" placeholder="Type Your Comment" className="border border-slate-950 lg:w-96"/>
         <input
           type="submit"
           value="send"
-          className="p-2 gorgeous-button"
+          className=" gorgeous-button"
         />
+      </div>      
       </div>
-      
-      </div>
+      <Popular></Popular>
     </div>
   );
 };

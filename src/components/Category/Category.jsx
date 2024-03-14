@@ -4,11 +4,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
-import img1 from "../../assets/category/slide1.jpg";
-import img2 from "../../assets/category/slide2.jpg";
-import img3 from "../../assets/category/slide3.jpg";
-import img4 from "../../assets/category/slide4.jpg";
-import img5 from "../../assets/category/slide5.jpg";
+import img1 from "../../assets/category/slide1.jpeg";
+import img2 from "../../assets/category/slide2.jpeg";
+import img3 from "../../assets/category/slide3.jpeg";
+import img4 from "../../assets/category/slide4.jpeg";
+import img5 from "../../assets/category/slide5.jpeg";
 import vegCover from "../../assets/category/vegCover.jpg";
 import fishCover from "../../assets/category/fishCover.jpg";
 import dalCover from "../../assets/category/dalCover.jpg";
@@ -27,7 +27,7 @@ const Category = () => {
       <div className=" py-20">
         <Swiper
           slidesPerView={1}
-          spaceBetween={10}
+          spaceBetween={5}
           pagination={{
             clickable: true,
           }}
@@ -49,16 +49,16 @@ const Category = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img src={img1} alt="" />
+            <img src={img1} alt="" style={{height:"340px"}} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={img2} alt="" />
+            <img src={img2} alt="" style={{height:"340px"}} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={img3} alt="" />
+            <img src={img3} alt="" style={{height:"340px"}} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={img4} alt="" />
+            <img src={img4} alt="" style={{height:"340px"}} />
           </SwiperSlide>
           <SwiperSlide>
             <img src={img5} alt="" />

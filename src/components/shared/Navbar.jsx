@@ -8,9 +8,7 @@ const Navbar = () => {
   return (
     <div>
       <div
-        className={
-          "navbar z-50 fixed bg-[#1a1a1a] top-0  w-full text-slate-300"
-        }
+        className="navbar z-50 fixed bg-[#1a1a1a] top-0  w-full text-slate-300"
       >
         <div className="navbar-start">
           <div className="dropdown">
