@@ -5,7 +5,7 @@ import { IoMdStarHalf ,IoMdStar } from "react-icons/io";
 const Discount = () => {
   const [discounts, setDiscounts] = useState([]);
   useEffect(() => {
-    fetch("discount.json")
+    fetch("http://localhost:5000/discount")
       .then((res) => res.json())
       .then((data) => setDiscounts(data));
   }, []);
@@ -13,8 +13,8 @@ const Discount = () => {
   return (
     <div className="w-11/12 mx-auto mt-16">
       <p className="text-2xl text-center font-bold mt-28 mb-6">Discount Price</p>
-      <div className="lg:flex">
-        <div className="lg:w-3/12">
+      <div className="md:flex items-center">
+        <div className="md:w-3/12">
           <video
             width="100%"
             // style={{ height: "600px", backgroundColor: "black" }}
@@ -29,7 +29,7 @@ const Discount = () => {
             />
           </video>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 ml-8 lg:w-9/12">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 ml-8 lg:w-9/12">
           {discounts.map((discount) => (
             <div key={discount.id}>
               <div className="flex items-center border border-slate-300 rounded ">
@@ -39,7 +39,7 @@ const Discount = () => {
                   className="border-r border-slate-300 h-[90px] w-[90px]"
                 />
                 <div className="p-3 ">
-                  <p className="text-slate-500 text-sm">IN STOCK</p>
+                  <p className="text-slate-500 text-sm uppercase">{discount.available}</p>
                   <p className="flex text-yellow-500">
                     <IoMdStar />
                     <IoMdStar />
@@ -47,8 +47,8 @@ const Discount = () => {
                     <IoMdStar />
                     <IoMdStarHalf />
                   </p>
-                  <p className="text-sm font-bold py-2">Organic Fresh Apple</p>
-                  <p><del className="text-red-600">$5.00</del> $3.00</p>
+                  <p className="text-sm font-bold py-2">{discount.name}</p>
+                  <p><del className="text-red-600">pre price</del> ${discount.price}</p>
                 </div>
               </div>
             </div>

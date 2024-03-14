@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import pngImg from "../../../assets/home/offer.png";
-import Discount from "../Discount/Discount";
+// import Discount from "../Discount/Discount";
+import './Testimonial.css'
 
 const Testimonial = () => {
   const [reviews, setReviews] = useState([]);
@@ -35,12 +36,11 @@ const Testimonial = () => {
         <input
           type="submit"
           value="send"
-          className="p-2 bg-slate-900 text-white text-center"
+          className="p-2 gorgeous-button"
         />
       </div>
-      </div>
       
-      <Discount></Discount>
+      </div>
     </div>
   );
 };

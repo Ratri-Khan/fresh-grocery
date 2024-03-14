@@ -1,0 +1,19 @@
+.gorgeous-button {
+    background: linear-gradient(45deg, rgb(2 6 23), rgb(15 23 42));
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgb(20 83 45);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .gorgeous-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgb(113 63 18);
+  }
+  

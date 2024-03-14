@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom";
 import featuredImg from "../../../assets/banner/banner2.jpg";
 import "./Featured.css";
 
 const Featured = () => {
   return (
-    <div className="featured-item bg-fixed text-white pt-8">
+    <div className="featured-item bg-fixed text-white pt-8 mt-6">
       <div className="text-center">
         <p className="text-5xl">Check It Out</p>
         <p className="text-2xl py-4">Featured Item</p>
       </div>
-      <div className="md:flex justify-center items-center bg-slate-500 bg-opacity-60 pb-20 pt-12 lg:px-36 px-5">
+      <div className="md:flex justify-center items-center bg-slate-500 bg-opacity-60 pb-20 pt-12 md:px-36 px-5">
         <div>
           <img src={featuredImg} alt="" />
         </div>
@@ -24,7 +25,7 @@ const Featured = () => {
             dicta minus pariatur. Perspiciatis nobis vero quas?
           </p>
           <button className="rounded py-2 px-4 border mt-4">
-            Order Now
+            <Link to="/order/vegetable">Order Now</Link>
           </button>
         </div>
       </div>
