@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className=" bg-slate-950 text-white py-4 mt-4 text-center">
+    <div className=" bg-slate-950 text-white py-4 text-center">
       <div className="w-6/12 mx-auto md:flex justify-between items-center">
       <div>
         <h3>Fresh Grocery</h3>
