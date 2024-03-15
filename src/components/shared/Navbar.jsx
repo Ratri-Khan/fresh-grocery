@@ -59,13 +59,21 @@ const Navbar = () => {
           <li>
             <Link to="/order/vegetable">Order</Link>
           </li>
+          <li>
+            <Link to="/secret">Secret</Link>
+          </li>
         </ul>
       </div>
       <div className="navbar-end">
         <FaCartArrowDown />
 
         {user ? (
-          <p className="border border-white py-1 px-3" onClick={handleLogout}> logout</p>
+          <div
+            onClick={handleLogout}
+            className="mx-6 flex flex-col  justify-center items-center cursor-pointer">
+            <img src={user.photoURL} alt="" className="h-[60px] w-[60px] border border-white rounded-full" />
+            <p className="text-xs"> logout</p>
+          </div>
         ) : (
           <Link to="/login">
             <div className="mx-6 flex flex-col  justify-center items-center">

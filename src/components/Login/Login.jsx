@@ -1,6 +1,6 @@
 // import React from 'react';
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { MdAccountCircle } from "react-icons/md";
 import { FaLock } from "react-icons/fa";
@@ -9,19 +9,29 @@ import "../Home/Testimonial/Testimonial.css"
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
+  const [error, setError] = useState("");
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/"
+
   const handleLogin = (event) => {
     event.preventDefault();
     const form = event.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password);
+    
     signIn(email, password)
       .then((result) => {
         const user = result.user;
+        navigate(from, { replace: true })
         console.log(user);
+        form.reset();
       })
       .catch((error) => {
-        console.log(error);
+        if (error.message === "Firebase: Error (auth/invalid-credential).") {
+          setError("Email Or Password Wrong");
+        }
       });
   };
   return (
@@ -50,9 +60,10 @@ const Login = () => {
               />
               <FaLock className="icon" />
             </div>
+            <p className="font-bold text-yellow-500">{error}</p>
 
             <div className="form-control mt-6  text-center">
-              <button className="inputBox -pr-7 bg-slate-900">Login</button>
+              <button className="inputBox">Login</button>
             </div>
 
             <p>
