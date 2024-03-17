@@ -5,8 +5,8 @@ import Category from "../components/Category/Category";
 import Order from "../components/Order/Order";
 import SignUp from "../components/SignUp/SignUp";
 import Login from "../components/Login/Login";
-import Secret from "../components/Secret/Secret";
-import PrivateRoute from "./PrivateRoute";
+// import Secret from "../components/Secret/Secret";
+// import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -37,10 +37,10 @@ const router = createBrowserRouter([
         path: "/login",
         element: <SignUp />,
       },
-      {
-        path: "/secret",
-        element: <PrivateRoute><Secret /></PrivateRoute>,
-      },
+      // {
+      //   path: "/secret",
+      //   element: <PrivateRoute><Secret /></PrivateRoute>,
+      // },
     ],
   },
 ]);

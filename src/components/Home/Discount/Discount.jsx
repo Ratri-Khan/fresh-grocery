@@ -5,7 +5,7 @@ import { IoMdStarHalf ,IoMdStar } from "react-icons/io";
 const Discount = () => {
   const [discounts, setDiscounts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/discount")
+    fetch("https://fresh-grocery-server.vercel.app/discount")
       .then((res) => res.json())
       .then((data) => setDiscounts(data));
   }, []);

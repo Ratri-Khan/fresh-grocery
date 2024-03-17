@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import pngImg from "../../../assets/home/offer.png";
-// import Discount from "../Discount/Discount";
 import './Testimonial.css'
 import Popular from "../Popular/Popular";
 
