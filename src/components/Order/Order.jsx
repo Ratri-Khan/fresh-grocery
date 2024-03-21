@@ -45,16 +45,32 @@ const Order = () => {
             <Tab>fruits</Tab>
           </TabList>
           <TabPanel>
-            <OrderCart data={vegetables}></OrderCart>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-24">
+            {vegetables.map((data) => (
+              <OrderCart key={data._id} data={data}></OrderCart>
+            ))}
+          </div>
           </TabPanel>
           <TabPanel>
-            <OrderCart data={fishes}></OrderCart>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-24">
+            {fishes.map((data) => (
+              <OrderCart key={data._id} data={data}></OrderCart>
+            ))}
+          </div>
           </TabPanel>
           <TabPanel>
-            <OrderCart data={dal}></OrderCart>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-24">
+            {dal.map((data) => (
+              <OrderCart key={data._id} data={data}></OrderCart>
+            ))}
+          </div>
           </TabPanel>
           <TabPanel>
-            <OrderCart data={fruits}></OrderCart>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-24">
+            {fruits.map((data) => (
+              <OrderCart key={data._id} data={data}></OrderCart>
+            ))}
+          </div>
           </TabPanel>
         </Tabs>
       </div>

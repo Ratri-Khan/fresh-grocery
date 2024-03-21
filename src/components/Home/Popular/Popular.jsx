@@ -7,7 +7,7 @@ import '../Testimonial/Testimonial.css'
 const Popular = () => {
   const [popular, setPopular] = useState([]);
   useEffect(() => {
-    fetch("https://fresh-grocery-server.vercel.app/popular")
+    fetch("http://localhost:5000/popular")
       .then((res) => res.json())
       .then((data) => setPopular(data));
   }, []);

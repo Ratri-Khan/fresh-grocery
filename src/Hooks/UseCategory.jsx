@@ -4,7 +4,7 @@ const UseCategory = () => {
     const [products,setProducts] = useState([]);
     const [loading,setLoading] = useState([]);
     useEffect(() =>{
-        fetch('https://fresh-grocery-server.vercel.app/products')
+        fetch('http://localhost:5000/products')
         .then(res => res.json())
         .then(data => {
             setProducts(data)

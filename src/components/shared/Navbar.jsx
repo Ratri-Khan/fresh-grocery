@@ -1,5 +1,5 @@
 // import React from "react";
-import { FaCartArrowDown } from "react-icons/fa";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import { MdAccountCircle } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
@@ -60,7 +60,12 @@ const Navbar = () => {
             <Link to="/order/vegetable">Order</Link>
           </li>
           <li>
-            <FaCartArrowDown />
+            <button className="bg-red-400">
+              <Link to="/dashboard/myCart">
+                <AiOutlineShoppingCart className="w-8 h-8" />
+              </Link>
+              {/* <p>{cart?.length || 0}</p> */}
+            </button>
           </li>
         </ul>
       </div>
