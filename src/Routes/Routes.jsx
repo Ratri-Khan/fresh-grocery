@@ -5,6 +5,8 @@ import Category from "../components/Category/Category";
 import Order from "../components/Order/Order";
 import SignUp from "../components/SignUp/SignUp";
 import Login from "../components/Login/Login";
+import Dashboard from "../Layouts/Dashboard";
+import MyCart from "../components/Dashboard/MyCart/MyCart";
 // import Secret from "../components/Secret/Secret";
 // import PrivateRoute from "./PrivateRoute";
 
@@ -39,6 +41,17 @@ const router = createBrowserRouter([
       // },
     ],
   },
+  {
+    path:'dashboard',
+    element: <Dashboard></Dashboard>,
+    children:[
+        {
+            path:'myCart',
+            element:<MyCart></MyCart>
+        }
+    ]
+
+}
 ]);
 
 export default router;

@@ -3,51 +3,60 @@ import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
 import { useLocation, useNavigate } from "react-router-dom";
+import useCart from "../../Hooks/UseCart";
 
 const OrderCart = ({ data }) => {
-  console.log(data);
-  const { name, pic, price, rating, condition ,_id } = data;
+  const { name, pic, price, rating, condition, _id } = data;
   const { user } = useContext(AuthContext);
+  const [, refatch] = useCart();
   const Navigate = useNavigate();
   const location = useLocation();
 
   const handleAddToCart = () => {
-    if(user && user.email){
-      const cartItem = {cartId: _id, name, pic, price,rating,condition, email: user.email}
-      fetch('http://localhost:5000/carts', {
-          method: 'POST',
-          headers: {
-              'content-type': 'application/json'
-          },
-          body: JSON.stringify(cartItem)
+    if (user && user.email) {
+      const cartItem = {
+        cartId: _id,
+        name,
+        pic,
+        price,
+        rating,
+        condition,
+        email: user.email,
+      };
+      fetch("http://localhost:5000/carts", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(cartItem),
       })
-      .then(res => res.json())
-      .then(data => {
-          if(data.insertedId){
-              Swal.fire({
-                  position: 'top-end',
-                  icon: 'success',
-                  title: 'Food added on the cart.',
-                  showConfirmButton: false,
-                  timer: 1500
-                })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.insertedId) {
+            refatch();
+            Swal.fire({
+              position: "top-end",
+              icon: "success",
+              title: "Food added on the cart.",
+              showConfirmButton: false,
+              timer: 1500,
+            });
           }
-      })
-  }
-  else{
+        });
+    } else {
       Swal.fire({
-          title: 'Please login to order the food',
-          icon: 'warning',
-          showCancelButton: true,
-          confirmButtonColor: '#3085d6',
-          cancelButtonColor: '#d33',
-          confirmButtonText: 'Login now!'
-        }).then((result) => {
-          if (result.isConfirmed) {
-            Navigate('/login', {state: {from: location}})
-          }
-        })
-  }
+        title: "Please login to order the food",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Login now!",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Navigate("/login", { state: { from: location } });
+        }
+      });
+    }
   };
   return (
     <div className="card bg-base-100 shadow-xl border-2 shadow-blue-500/60 text-slate-400">

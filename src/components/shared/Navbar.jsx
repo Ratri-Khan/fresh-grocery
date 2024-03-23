@@ -4,8 +4,10 @@ import { MdAccountCircle } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { useContext } from "react";
+import useCart from "../../Hooks/UseCart";
 
 const Navbar = () => {
+  const [cart] = useCart();
   const { user, logOut } = useContext(AuthContext);
   const handleLogout = () => {
     logOut()
@@ -64,7 +66,7 @@ const Navbar = () => {
               <Link to="/dashboard/myCart">
                 <AiOutlineShoppingCart className="w-8 h-8" />
               </Link>
-              {/* <p>{cart?.length || 0}</p> */}
+              <p>{cart?.length || +0}</p>
             </button>
           </li>
         </ul>
