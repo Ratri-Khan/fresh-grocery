@@ -6,6 +6,7 @@ import { MdAccountCircle } from "react-icons/md";
 import { FaLock } from "react-icons/fa";
 import "./Login.css";
 import "../Home/Testimonial/Testimonial.css"
+import SocialLogin from "../shared/SocialLogin";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
@@ -73,6 +74,7 @@ const Login = () => {
               </span>
             </p>
           </form>
+          <SocialLogin></SocialLogin>
         </div>
       </div>
     </div>

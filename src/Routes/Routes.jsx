@@ -8,7 +8,7 @@ import Login from "../components/Login/Login";
 import Dashboard from "../Layouts/Dashboard";
 import MyCart from "../components/Dashboard/MyCart/MyCart";
 // import Secret from "../components/Secret/Secret";
-// import PrivateRoute from "./PrivateRoute";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
   },
   {
     path:'dashboard',
-    element: <Dashboard></Dashboard>,
+    element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
     children:[
         {
             path:'myCart',

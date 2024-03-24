@@ -1,7 +1,10 @@
 import { NavLink, Outlet } from "react-router-dom";
 import "./Dashboard.css";
+import useCart from "../Hooks/UseCart";
 
 const Dashboard = () => {
+  const [cart] = useCart();
+
   return (
     <div className="drawer lg:drawer-open">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -34,9 +37,13 @@ const Dashboard = () => {
           <li>
             <NavLink
               to="/dashboard/myCart"
-              style={({ isActive }) => ({ color: isActive ? 'green' : 'red' })}
+              style={({ isActive }) => ({ color: isActive ? "green" : "" })}
             >
               My Cart
+              <span className="bg-[#cd314b] rounded w-[40px] text-center">
+                {" "}
+                + {cart?.length || +0}
+              </span>
             </NavLink>
           </li>
           <div className="divider"></div>

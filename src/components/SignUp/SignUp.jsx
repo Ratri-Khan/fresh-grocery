@@ -31,11 +31,25 @@ const SignUp = () => {
       .then((res) => {
         createUser(data.email, data.password).then((result) => {
           const loggedUser = result.user;
-          reset();
           console.log(loggedUser);
+
           updateUserProfile(data.name, res.data.url).then(() => {
-            reset();
-            navigate(from, { replace: true })
+            const saveUser = {name : data.name, email: data.email}
+            console.log(saveUser);
+            fetch('http://localhost:5000/users',{
+              method:'POST',
+              headers:{
+                'content-type': 'application/json'
+              },
+              body: JSON.stringify(saveUser)
+            })
+            .then(res => res.json())
+            .then(data =>{
+              if(data.insertedId){
+                reset();
+                navigate(from, { replace: true })
+              }
+            })
           })
           .catch((error) => {
             console.error("Error updating user profile:", error);

@@ -5,9 +5,11 @@ import Swal from "sweetalert2";
 
 const MyCart = () => {
   const [cart , refetch] = useCart();
+  console.log(cart);
   // const totalPrice = cart.reduce((total, info) => total + info.price, 0);
 
   const handleDelete = info => {
+    console.log(info);
     Swal.fire({
         title: "Are you sure?",
         text: "You won't be able to revert this!",
@@ -18,7 +20,7 @@ const MyCart = () => {
         confirmButtonText: "Yes, delete it!"
     }).then((result) => {
         if (result.isConfirmed) {
-            fetch(`http://localhost:5000/carts/${info._id}`, 
+            fetch(`http://localhost:5000/carts/${info}`, 
             {method:'DELETE'})
             .then(res => res.json())
             .then(data =>{
