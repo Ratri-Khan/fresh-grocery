@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import "../Login/Login.css";
+import SocialLogin from "../shared/SocialLogin";
 
 const SignUp = () => {
   const { createUser, updateUserProfile } = useContext(AuthContext);
@@ -72,7 +73,7 @@ const SignUp = () => {
   return (
     <div className="hero min-h-screen backgroundImg">
       <div className="hero-content">
-        <div className="wrapper">
+        <div className="wrapper mt-16">
           <h1>SIGN UP</h1>
           <form className="card-body" onSubmit={handleSubmit(onSubmit)}>
             <div className="form-control">
@@ -147,6 +148,7 @@ const SignUp = () => {
                 <Link to="/login">Login</Link>
               </span>
             </p>
+            <div className="text-center inputBox"><SocialLogin></SocialLogin></div>
           </form>
         </div>
       </div>

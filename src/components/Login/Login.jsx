@@ -73,8 +73,9 @@ const Login = () => {
                 <Link to="/signUp">Sign Up</Link>
               </span>
             </p>
+            <div className="text-center inputBox"><SocialLogin></SocialLogin></div>
           </form>
-          <SocialLogin></SocialLogin>
+          
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import useCart from "../Hooks/UseCart";
 
 const Dashboard = () => {
   const [cart] = useCart();
+  const isAdmin = true;
 
   return (
     <div className="drawer lg:drawer-open">
@@ -24,38 +25,73 @@ const Dashboard = () => {
           className="drawer-overlay"
         ></label>
         <ul className="menu p-4 w-80 min-h-full text-base-200 bg-slate-900">
-          {/* Sidebar content here */}
-          <li>
-            <NavLink>User Home</NavLink>
-          </li>
-          <li>
-            <NavLink>Reservations</NavLink>
-          </li>
-          <li>
-            <NavLink>Payment History</NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/dashboard/myCart"
-              style={({ isActive }) => ({ color: isActive ? "green" : "" })}
-            >
-              My Cart
-              <span className="bg-[#cd314b] rounded w-[40px] text-center">
-                {" "}
-                + {cart?.length || +0}
-              </span>
-            </NavLink>
-          </li>
-          <div className="divider"></div>
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/category">Category</NavLink>
-          </li>
-          <li>
-            <NavLink to="/order/vegetable">Order</NavLink>
-          </li>
+          {isAdmin ? (
+            <>
+            <li>
+              <NavLink>Admin Home</NavLink>
+            </li>
+            <li>
+              <NavLink>Add Items</NavLink>
+            </li>
+            <li>
+              <NavLink>Manage Items</NavLink>
+            </li>
+            <li>
+              <NavLink>Manage Bookings</NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="allUsers"
+                style={({ isActive }) => ({ color: isActive ? "#ff0065" : "" })}>
+                All Users
+              </NavLink>
+            </li>
+            <div className="divider"></div>
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/category">Category</NavLink>
+            </li>
+            <li>
+              <NavLink to="/order/vegetable">Order</NavLink>
+            </li>
+          </>
+          ) : (
+            <>
+              <li>
+                <NavLink>User Home</NavLink>
+              </li>
+              <li>
+                <NavLink>Reservations</NavLink>
+              </li>
+              <li>
+                <NavLink>Payment History</NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/dashboard/myCart"
+                  style={({ isActive }) => ({ color: isActive ? "green" : "" })}
+                >
+                  My Cart
+                  <span className="bg-[#cd314b] rounded w-[40px] text-center">
+                    {" "}
+                    + {cart?.length || +0}
+                  </span>
+                </NavLink>
+              </li>
+              <div className="divider"></div>
+              <li>
+                <NavLink to="/">Home</NavLink>
+              </li>
+              <li>
+                <NavLink to="/category">Category</NavLink>
+              </li>
+              <li>
+                <NavLink to="/order/vegetable">Order</NavLink>
+              </li>
+            </>
+          )}
         </ul>
       </div>
     </div>

@@ -9,6 +9,7 @@ import Dashboard from "../Layouts/Dashboard";
 import MyCart from "../components/Dashboard/MyCart/MyCart";
 // import Secret from "../components/Secret/Secret";
 import PrivateRoute from "./PrivateRoute";
+import AllUser from "../components/Dashboard/AllUser/AllUser";
 
 const router = createBrowserRouter([
   {
@@ -48,7 +49,11 @@ const router = createBrowserRouter([
         {
             path:'myCart',
             element:<MyCart></MyCart>
-        }
+        },
+        {
+          path:'allUsers',
+          element:<AllUser></AllUser>
+      }
     ]
 
 }

@@ -25,14 +25,12 @@ const Popular = () => {
               <h2 className="card-title">{info.name}</h2>
               <p>Price: {info.price}</p>
               <p>Condition: {info.condition}</p>
-              <p>
                 <Rating
                   className="mx-auto"
                   style={{ maxWidth: 100 }}
                   value={info.rating}
                   readOnly
                 />
-              </p>
               <div className="card-actions">
                 <button className="gorgeous-button rounded">Add To Cart</button>
               </div>
